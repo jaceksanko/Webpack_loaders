@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './TodoList.css';
-
+import Todo from '../components/Todo';
 
 class TodoList extends React.Component {
     constructor(props){
@@ -8,10 +8,7 @@ class TodoList extends React.Component {
     }
     render() {
         let liList = this.props.data.map((li) => {
-            return <li  key={li.id}>
-                    <p>{li.id}. {li.text}</p>
-                    <button onClick={() => this.props.remove(li.id)}>X</button>
-                </li>
+            return <Todo id={li.id} remove={this.props.remove} text={li.text}/>
         })
         
         return (

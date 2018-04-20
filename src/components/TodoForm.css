@@ -1,0 +1,16 @@
+.todoForm {
+    padding-bottom: 30px;
+}
+.todoForm input {
+    margin-left:  10px;
+}
+
+.todoForm input[type=submit] {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.todoForm input[type=submit]:hover {
+    background-color: maroon;
+}
