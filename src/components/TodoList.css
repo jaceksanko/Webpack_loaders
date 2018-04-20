@@ -1,0 +1,28 @@
+.todolist {
+    color: darkred;
+  
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    height: 20px;
+    background-color: darkblue;
+    color: cornsilk;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(36, 133, 24);
+    color: rgb(20, 20, 20);
+}
+
