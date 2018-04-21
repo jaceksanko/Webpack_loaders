@@ -45,6 +45,11 @@ module.exports = (env) => {
                 }
             ]
         },
-        plugins: plugins
+        plugins: plugins,
+        devServer: {
+            contentBase: path.join(__dirname, "build"),
+            compress: true,
+            port: 9000
+          }
     }
 };
